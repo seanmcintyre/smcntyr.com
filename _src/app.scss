@@ -1,0 +1,240 @@
+html, body {
+    box-sizing: border-box;
+    font: 600 24px/1 "proxima-nova";
+    *, *:before, *:after {
+        box-sizing: inherit;
+        text-rendering: optimizelegibility;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        border: 0;
+    }
+
+    > header,
+    > section,
+    > footer {
+        max-width: 900px;
+        padding: 0 40px;
+        margin: 60px auto 0;
+        display: block;
+        overflow: hidden;
+    }
+}
+
+body {
+    color: #FFF;
+    transition: background-color 1000ms;
+    &.t5,
+    &.t6,
+    &.t7 {
+        background-color: #cbf6ff;
+        color: #000;
+    }
+    &.t8 {
+        background-color: #2d4283;
+    }
+    &.t9,
+    &.t10,
+    &.t11,
+    &.t12,
+    &.t13,
+    &.t14 {
+        //background: linear-gradient(#292f99,#77b1d8);
+        background-color: #292f99;
+    }
+    &.t15,
+    &.t16,
+    &.t17 {
+        background-color: #1c3552;
+    }
+    &.t18,
+    &.t19,
+    &.t20,
+    &.t21,
+    &.t22,
+    &.t23,
+    &.t24,
+    &.t0,
+    &.t1,
+    &.t2,
+    &.t3,
+    &.t4 {
+        background-color: #262626;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font: 400 24px/1.6667 "proxima-nova";
+    a {
+        font: 800 24px/1.6667 "proxima-nova";
+        letter-spacing: 0.25px;
+        border-bottom: 2px solid #FFF;
+    }
+}
+
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+}
+
+.name {
+    display: block;
+    float: left;
+    font: 700 48px/100px "proxima-nova";
+    padding: 0 30px;
+}
+
+.titles,
+.blurb {
+    display: block;
+    width: 100%;
+}
+
+.titles {
+    float: left;
+    font: 400 32px/1.5 "proxima-nova";
+    letter-spacing: 0.333px;
+    margin-top: 40px;
+    a {
+        font: 800 32px/1.4 "proxima-nova";
+        letter-spacing: 0.666px;
+    }
+}
+
+#time {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font: 400 18px/1 "inconsolata";
+    letter-spacing: 2px;
+    color: rgba(#FFF,0.75);
+    cursor: pointer;
+    transition: 200ms;
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid rgba(#FFF,0.05);
+    &:hover {
+        color: rgba(#FFF,1);
+        background-color: rgba(#FFF,0.1);
+        border: 1px solid rgba(#FFF,0.5);
+    }
+}
+
+@keyframes clock {
+    0% {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+}
+
+.timeWrap {
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+        #clock,
+        #hour {
+            animation: none;
+        }
+    }
+    transition: 200ms ease-in-out;
+}
+
+#clock {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 100px;
+    width: 100px;
+    fill: transparent;
+    stroke: #FFF;
+    stroke-width: 1.5px;
+    stroke-dasharray: 156 156;
+    transform: rotate(0);
+    cursor: pointer;
+    user-select: none;
+    animation: 2300ms ease-in-out infinite both clock;
+}
+
+#hour {
+    position: fixed;
+    top: 45px;
+    right: 45px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    pointer-events: none;
+    font: 300 24px/50px "proxima-nova";
+    cursor: pointer;
+    user-select: none;
+    animation: 2300ms ease-in-out infinite both clock;
+}
+
+#contact {
+    h2 {
+        font: 700 24px/1 "proxima-nova";
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .email {
+        margin-bottom: 30px;
+        float: left;
+        width: 100%;
+    }
+    ul {
+        overflow: hidden;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    li {
+        float: left;
+        margin-right: 30px;
+        font: 400 18px/1 "proxima-nova";
+    }
+}
+
+.license {
+    margin-top: 40px;
+    border-top: 1px solid rgba(#FFF,0.5);
+    padding-top: 40px;
+    float: left;
+    font: 400 16px/1 "proxima-nova";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(#FFF,0.6666);
+}
+
+#nyc {
+    margin-top: -120px;
+    z-index: -1;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+// body {
+//   font: font-style font-variant font-weight font-size/line-height font-family;
+// }
