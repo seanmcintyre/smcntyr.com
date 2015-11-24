@@ -4,12 +4,11 @@ var $clock = document.getElementById('clock');
 var $hour = document.getElementById('hour');
 var displayTime = 0;
 var timeOffset = 0;
-$clock.onclick = function() {
-    let today = new Date();
-    timeOffset = (today.getHours() + timeOffset >= 24) ? parseInt(timeOffset) - 24 : timeOffset + 1;
-    document.body.className = `t${timeOffset + today.getHours()}`;
-    setTime();
-};
+
+function ldZ(i) {
+    if (i < 10) {i = '0' + i};
+    return i;
+}
 
 function setTime() {
     let today = new Date();
@@ -31,9 +30,12 @@ function setTime() {
     }
 }
 
-function ldZ(i) {
-    if (i < 10) {i = '0' + i};
-    return i;
-}
+$clock.onclick = function() {
+    let today = new Date();
+    timeOffset = (today.getHours() + timeOffset >= 24) ? parseInt(timeOffset) - 24 : timeOffset + 1;
+    document.body.className = `t${timeOffset + today.getHours()}`;
+    setTime();
+};
 
 setTime();
+
