@@ -8,6 +8,10 @@ var config = {
     scripts: './_src/**.js',
     appJs: './_src/app.js',
     templates: './**.html',
+    images: {
+        src: './_src/img/**',
+        dest: './img/'
+    },
     assets: './_/',
     jshint: {
         "esnext": true,

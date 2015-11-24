@@ -5,6 +5,13 @@ var $hour = document.getElementById('hour');
 var displayTime = 0;
 var timeOffset = 0;
 
+let preload = [];
+for (let i = 0; i < 25; i++) {
+    let img = new Image();
+    img.src = `/img/nyc-${i}.png`;
+    preload.push(img);
+}
+
 function ldZ(i) {
     if (i < 10) {i = '0' + i};
     return i;
