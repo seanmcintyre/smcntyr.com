@@ -25,8 +25,8 @@ function setTime() {
     document.body.className = `t${timeOffset + today.getHours()}`;
     document.getElementById('clock').style.strokeDasharray = `${fill} 156`;
     setTimeout(setTime, 1000);
-    if ($nyc.src.indexOf(`img/nyc-${timeOffset + today.getHours()}.png`) == -1) {
-        $nyc.src = `img/nyc-${timeOffset + today.getHours()}.png`;
+    if ($nyc.src.indexOf(`/img/nyc-${timeOffset + today.getHours()}.png`) == -1) {
+        $nyc.src = `/img/nyc-${timeOffset + today.getHours()}.png`;
     }
 }
 
