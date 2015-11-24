@@ -12,6 +12,9 @@ html, body {
         outline: 0;
         border: 0;
     }
+    overflow: hidden;
+    height: 100%;
+    background: #222222;
 
     > header,
     > section,
@@ -30,44 +33,33 @@ html, body {
 
 body {
     color: #FFF;
+    overflow-y: auto;
     transition: background-color 1000ms;
-    &.t5,
-    &.t6,
-    &.t7 {
-        background-color: #cbf6ff;
-        color: #000;
-    }
-    &.t8 {
-        background-color: #2d4283;
-    }
-    &.t9,
-    &.t10,
-    &.t11,
-    &.t12,
-    &.t13,
-    &.t14 {
-        //background: linear-gradient(#292f99,#77b1d8);
-        background-color: #292f99;
-    }
-    &.t15,
-    &.t16,
-    &.t17 {
-        background-color: #1c3552;
-    }
-    &.t18,
-    &.t19,
-    &.t20,
-    &.t21,
-    &.t22,
-    &.t23,
-    &.t24,
-    &.t0,
-    &.t1,
-    &.t2,
-    &.t3,
-    &.t4 {
-        background-color: #262626;
-    }
+    &.t5  { background: linear-gradient(#25383C, #000000); }
+    &.t6  { background: linear-gradient(#2A2D46, #9EE2FF); }
+    &.t7  { background: linear-gradient(#313A56, #B8EEFF); }
+    &.t8  { background: linear-gradient(#405582, #E3EAFF); }
+    &.t9  { background: linear-gradient(#376FB7, #B9D8ED); }
+    &.t10 { background: linear-gradient(#5679CD, #96BFE3); }
+    &.t11 { background: linear-gradient(#5A83C3, #96BFE3); }
+    &.t12 { background: linear-gradient(#5A83C3, #77b1d8); }
+    &.t13 { background: linear-gradient(#5C71C2, #77b1d8); }
+    &.t14 { background: linear-gradient(#414FBA, #77b1d8); }
+    &.t15 { background: linear-gradient(#4657CC, #658FCB); }
+    &.t16 { background: linear-gradient(#373AB9, #6995C4); }
+    &.t17 { background: linear-gradient(#292f99, #5C8EA5); }
+    &.t18 { background: linear-gradient(#383178, #527A97); }
+    &.t19 { background: linear-gradient(#3C2D6B, #4F7587); }
+    &.t20 { background: linear-gradient(#3B3057, #29415D); }
+    &.t21 { background: linear-gradient(#32314D, #142643); }
+    &.t22 { background: linear-gradient(#2B2237, #0E0E16); }
+    &.t23 { background: linear-gradient(#211E2B, #000000); }
+    &.t24 { background: #000; }
+    &.t0  { background: #000; }
+    &.t1  { background: #000; }
+    &.t2  { background: #000; }
+    &.t3  { background: linear-gradient(#262626, #000000); }
+    &.t4  { background: linear-gradient(#222A2C, #000000); }
 }
 
 a {
