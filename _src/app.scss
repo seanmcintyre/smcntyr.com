@@ -35,6 +35,8 @@ body {
     color: #FFF;
     overflow-y: auto;
     transition: background-color 1000ms;
+
+    // gradients
     &.t5  { background: linear-gradient(#25383C, #000000); }
     &.t6  { background: linear-gradient(#2A2D46, #9EE2FF); }
     &.t7  { background: linear-gradient(#313A56, #B8EEFF); }
@@ -60,6 +62,34 @@ body {
     &.t2  { background: #000; }
     &.t3  { background: linear-gradient(#262626, #000000); }
     &.t4  { background: linear-gradient(#222A2C, #000000); }
+
+    // links
+    a     { transition: 120ms ease-in-out; }
+    &.t5  { a:hover { color: #DBDBC7; border-color: #DBDBC7; } }
+    &.t6  { a:hover { color: #FFD6BD; border-color: #FFD6BD; } }
+    &.t7  { a:hover { color: #FFF3B9; border-color: #FFF3B9; } }
+    &.t8  { a:hover { color: #FAFBB1; border-color: #FAFBB1; } }
+    &.t9  { a:hover { color: #EAFFCA; border-color: #EAFFCA; } }
+    &.t10 { a:hover { color: #F0FFBA; border-color: #F0FFBA; } }
+    &.t11 { a:hover { color: #FAF9A8; border-color: #FAF9A8; } }
+    &.t12 { a:hover { color: #FFE996; border-color: #FFE996; } }
+    &.t13 { a:hover { color: #FFE996; border-color: #FFE996; } }
+    &.t14 { a:hover { color: #FFE996; border-color: #FFE996; } }
+    &.t15 { a:hover { color: #C0F3B9; border-color: #C0F3B9; } }
+    &.t16 { a:hover { color: #A3EDDD; border-color: #A3EDDD; } }
+    &.t17 { a:hover { color: #A3EDDD; border-color: #A3EDDD; } }
+    &.t18 { a:hover { color: #92F7CB; border-color: #92F7CB; } }
+    &.t19 { a:hover { color: #DCEA98; border-color: #DCEA98; } }
+    &.t20 { a:hover { color: #E1E085; border-color: #E1E085; } }
+    &.t21 { a:hover { color: #EFE182; border-color: #EFE182; } }
+    &.t22 { a:hover { color: #F6E4A7; border-color: #F6E4A7; } }
+    &.t23 { a:hover { color: #FAF1C9; border-color: #FAF1C9; } }
+    &.t24 { a:hover { color: #FFE7DD; border-color: #FFE7DD; } }
+    &.t0  { a:hover { color: #FFE7F1; border-color: #FFE7F1; } }
+    &.t1  { a:hover { color: #E4DBFA; border-color: #E4DBFA; } }
+    &.t2  { a:hover { color: #DDD5FF; border-color: #DDD5FF; } }
+    &.t3  { a:hover { color: #D4C9F7; border-color: #D4C9F7; } }
+    &.t4  { a:hover { color: #AEC4F9; border-color: #AEC4F9; } }
 }
 
 a {
@@ -236,7 +266,7 @@ p {
 
 .license {
     margin-top: 40px;
-    border-top: 1px solid rgba(#FFF,0.25);
+    border-top: 1px solid rgba(#FFF,0.25) !important;
     width: 100%;
     padding-top: 40px;
     float: left;
@@ -244,6 +274,9 @@ p {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: rgba(#FFF,0.6666);
+    &:hover {
+        border-top: 1px solid rgba(#FFF,0.25) !important;
+    }
 }
 
 #nyc {
