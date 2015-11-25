@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Sean McIntyre -- @seanmcintyre
+
+# TECHNOLOGY COLOPHON
+
+    HTML, SCSS, Gulp, NodeJS
