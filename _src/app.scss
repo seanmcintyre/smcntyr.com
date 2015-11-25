@@ -1,6 +1,6 @@
 html, body {
     box-sizing: border-box;
-    font: 600 24px/1 "proxima-nova";
+    font: 600 20px/1 "proxima-nova";
     *, *:before, *:after {
         box-sizing: inherit;
         text-rendering: optimizelegibility;
@@ -24,6 +24,8 @@ html, body {
         margin: 40px auto 0;
         display: block;
         overflow: hidden;
+        z-index: 100;
+        position: relative;
         @media screen and (min-width: 1024px) {
             margin: 60px auto 0;
             padding: 0 40px;
@@ -98,14 +100,14 @@ a {
 }
 
 p {
-    font: 400 20px/1.6667 "proxima-nova";
+    font: 400 16px/1.6667 "proxima-nova";
     @media screen and (min-width: 1024px) {
-        font: 400 24px/1.6667 "proxima-nova";
+        font: 400 20px/1.6667 "proxima-nova";
     }
     a {
-        font: 800 20px/1.6667 "proxima-nova";
+        font: 800 16px/1.6667 "proxima-nova";
         @media screen and (min-width: 1024px) {
-            font: 800 24px/1.6667 "proxima-nova";
+            font: 800 20px/1.6667 "proxima-nova";
         }
         letter-spacing: 0.25px;
         border-bottom: 2px solid #FFF;
@@ -127,13 +129,13 @@ p {
     display: block;
     float: left;
     width: 100%;
-    font: 700 36px/48px "proxima-nova";
+    font: 700 30px/42px "proxima-nova";
     text-align: center;
     padding: 10px;
     @media screen and (min-width: 1024px) {
         text-align: left;
         width: auto;
-        font: 700 48px/100px "proxima-nova";
+        font: 700 42px/100px "proxima-nova";
         padding: 0 30px;
     }
 }
@@ -144,20 +146,24 @@ p {
     width: 100%;
 }
 
+.blurb {
+    margin-top: 40px;
+}
+
 .titles {
     float: left;
-    font: 400 26px/1.5 "proxima-nova";
+    font: 400 22px/1.4 "proxima-nova";
     letter-spacing: 0.333px;
-    margin-top: 30px;
+    margin-top: 20px;
     @media screen and (min-width: 1024px) {
         margin-top: 40px;
-        font: 400 32px/1.5 "proxima-nova";
+        font: 400 28px/1.4 "proxima-nova";
     }
     a {
         font: 800 26px/1.4 "proxima-nova";
         letter-spacing: 0.666px;
         @media screen and (min-width: 1024px) {
-            font: 800 32px/1.6667 "proxima-nova";
+            font: 800 32px/1.5 "proxima-nova";
         }
     }
 }
@@ -166,7 +172,7 @@ p {
     position: fixed;
     top: 20px;
     right: 20px;
-    font: 400 18px/1 "inconsolata";
+    font: 400 18px/1 "proxima-nova";
     letter-spacing: 2px;
     color: rgba(#FFF,0.75);
     cursor: pointer;
@@ -280,9 +286,9 @@ p {
 }
 
 #nyc {
-    margin: -120px 0 0;
+    margin: -15% 0 0;
     padding: 0;
-    z-index: -1;
+    z-index: 1;
     width: 100%;
     img {
         width: 100%;
