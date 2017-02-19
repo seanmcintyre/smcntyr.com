@@ -45,4 +45,7 @@ $clock.onclick = function() {
 };
 
 setTime();
-
+$(document).ready(function(){
+   window.setTimeout( () => { window.scrollTo(0, document.body.scrollHeight) }, 100);
+   window.setTimeout( () => { $('body,html').animate({scrollTop: 0}, 600) }, 700);
+});
