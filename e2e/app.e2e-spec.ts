@@ -1,6 +1,6 @@
 import { SmcntyrComPage } from './app.po';
 
-describe('smcntyr-com App', function() {
+describe('smcntyr.com App', function() {
   let page: SmcntyrComPage;
 
   beforeEach(() => {
