@@ -1,0 +1,8 @@
+<div class="stats">
+  <div class="app"
+    *ngFor="let app of summary">
+    <span class="name">{{app.name}}</span>
+    <span class="total">{{app.total}}m</span>
+    <div class="bg" [ngStyle]="app.css"></div>
+  </div>
+</div>

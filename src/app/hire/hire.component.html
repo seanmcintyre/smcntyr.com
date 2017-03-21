@@ -1,0 +1,23 @@
+<div class="budget">
+    <span>What is your budget?</span>
+
+    <input [(ngModel)]="money"
+        type="range"
+        value="5000"
+        min="5000"
+        max="50000"
+        step="100">
+
+    <input [(ngModel)]="money"
+        (blur)="textInput = !textInput"
+        (keyup)="onKey($event)"
+        *ngIf="textInput"
+        type="number"
+        value="5000">
+
+    <span class="money"
+      *ngIf="!textInput"
+      (click)="textInput = !textInput">
+      ${{money}}.00
+    </span>
+</div>

@@ -1,0 +1,16 @@
+html {
+  font-family: 'Fira Mono', monospace;
+}
+
+body {
+  max-width: 100%;
+  background: rgb(252, 252, 252);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

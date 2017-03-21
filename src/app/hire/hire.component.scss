@@ -1,0 +1,98 @@
+@function fib($n) {
+  $fib: 0 1;
+  @for $i from 1 through $n {
+    $new: nth($fib, length($fib)) + nth($fib, length($fib) - 1);
+    $fib: append($fib, $new);
+  }
+  @return nth($fib, length($fib));
+}
+
+$leaf: fib(8) + px fib(5) + px fib(8) + px fib(5) + px;
+
+@mixin track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: white;
+  border: none;
+}
+
+@mixin thumb {
+  border: 1px solid #000000;
+  height: 36px;
+  width: 28px;
+  border-radius: $leaf;
+  background: white;
+  cursor: pointer;
+  appearance: none;
+}
+
+@mixin ms-fill {
+  background: white;
+  border: none;
+  border-radius: $leaf;
+}
+
+@mixin ms-track {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.budget {
+    background: black;
+    color: white;
+    padding: 50px;
+    border-radius: 8px;
+    width: 60vw;
+    max-width: 600px;
+
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    transition: 200ms;
+
+    .money {
+      font-size: 48px;
+    }
+
+    input[type=number] {
+      font-size: 48px;
+      background: transparent;
+      color: white;
+      font-family: Fira Mono;
+      border: 0;
+      outline: 0;
+    }
+
+    input[type=range] {
+      width: 100%;
+      appearance: none;
+      margin: 50px 0;
+      outline: none;
+
+      &:focus {
+        outline: none;
+
+        &::-webkit-slider-runnable-track { @include ms-fill }
+        &::-ms-fill-lower { @include ms-fill }
+        &::-ms-fill-upper { @include ms-fill }
+      }
+
+      &::-webkit-slider-runnable-track { @include track }
+      &::-moz-range-track { @include track }
+      &::-ms-track { @include track }
+
+
+      &::-webkit-slider-thumb { @include thumb; margin-top: -15.5px }
+      &::-moz-range-thumb { @include thumb }
+      &::-ms-thumb { @include thumb }
+
+      &::-ms-fill-lower { @include ms-fill }
+      &::-ms-fill-upper { @include ms-fill }
+      &::-ms-track { @include ms-track }
+    }
+
+}
