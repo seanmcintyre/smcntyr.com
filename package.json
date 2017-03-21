@@ -8,7 +8,8 @@
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
+    "e2e": "protractor",
+    "gh": "ng build -prod -aot -base-href 'https://seanmcintyre.github.io/smcntyr.com/'; ngh;"
   },
   "private": true,
   "dependencies": {

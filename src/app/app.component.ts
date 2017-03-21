@@ -1,6 +1,5 @@
-declare const firebase: any;
-
 import { Component } from '@angular/core';
+import { FB } from './index';
 const stats = require('./stats.json');
 
 @Component({
@@ -16,7 +15,7 @@ export class AppComponent {
 
   constructor() {
     this.money = 5000;
-    firebase
+    FB
       .database()
       .ref('test')
       .once('value')
@@ -24,6 +23,7 @@ export class AppComponent {
         console.log('firebase:')
         console.log(JSON.stringify(s.val()));
       });
+
 
     this.stats = stats;
     this.summary = sortByUsage(calculateUsage(this.stats));
