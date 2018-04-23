@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { LighthouseComponent } from './portfolio/lighthouse/lighthouse.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClockComponent } from './clock/clock.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PortfolioComponent,
     AboutComponent,
     LighthouseComponent,
+    ClockComponent,
   ],
   imports: [
     BrowserModule,
