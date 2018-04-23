@@ -1,9 +1,57 @@
-<router-outlet></router-outlet>
+<!--The content below is only a placeholder and can be replaced.-->
+<nav>
+  <a routerLink="/">Work</a>
+  <a routerLink="/about">About</a>
+  <a routerLink="/resume">Resume</a>
+</nav>
 
-<div class="intro">
-    <h1 routerLink="/">sean mcintyre, designer</h1>
-    <a href="https://twitter.com/seanmcintyre" target="_blank">twitter</a>
-    <a href="https://github.com/seanmcintyre" target="_blank">github</a>
-    <a href="https://pinterest.com/smackies/" target="_blank">pinterest</a>
-    <a routerLink="/hire">hire me</a>
+<h1>Sean McIntyre</h1>
+<span class="discipline">Product Designer, Engineer</span>
+
+<div class="resume" @resumeAni>
+  <div class="lighthouse">
+    <logo-lighthouse></logo-lighthouse>
+    <span class="role">Product, Brand Design</span>
+    <span class="role">Front End</span>
+    <span class="work-type">Contract</span>
+  </div>
+
+  <div class="gust">
+    <logo-gust></logo-gust>
+    <span class="role">Product Design</span>
+    <span class="role">Front End</span>
+  </div>
+
+  <div class="sharewave">
+    <!-- <logo-sharewave></logo-sharewave> -->
+    <div class="logo"></div>
+    <span class="role">Product Design</span>
+    <span class="role">Front End</span>
+  </div>
+
+  <div class="northstreet">
+    <!-- <logo-northstreet></logo-northstreet> -->
+    <div class="logo"></div>
+    <span class="role">Responsive Design</span>
+    <span class="role">Front End</span>
+    <span class="work-type">Contract</span>
+  </div>
+
+  <div class="nox">
+    <logo-nox></logo-nox>
+  </div>
+
+  <div class="holly">
+    <logo-holly></logo-holly>
+    <span class="role">Design</span>
+    <span class="role">Development</span>
+  </div>
+
+  <div class="tedxslc">
+    <logo-tedxslc></logo-tedxslc>
+    <span class="role">Co-Founder</span>
+    <span class="role">Design, Production, Editing</span>
+    <a href="https://www.youtube.com/results?search_query=TEDxSLC"
+    target="_blank">link</a>
+  </div>
 </div>

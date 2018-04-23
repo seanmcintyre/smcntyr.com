@@ -1,0 +1,19 @@
+@import 'display';
+@import 'forms';
+@import 'typography';
+
+*,
+*::before,
+*::after {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  box-sizing: inherit;
+  outline: 0;
+  text-decoration: none;
+  vertical-align: baseline;

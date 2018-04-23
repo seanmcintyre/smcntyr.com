@@ -1,0 +1,48 @@
+@import "~global/tile.scss";
+@import "~global/typography.scss";
+
+main {
+  @include tile;
+  width: calc(100% - 50px);
+  height: calc(100vh - 40px);
+  max-height: 1000px;
+  position: relative;
+
+  @media (min-width: 720px) and (orientation: portrait) {
+    height: calc(50vh - 40px);
+  }
+
+  > span {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 0.03334em;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.3334em;
+  letter-spacing: 0.01667em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.discipline {
+  @include sub-text;
+}
+
+.roles {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px 0;
+
+  span {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

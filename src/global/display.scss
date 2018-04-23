@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: $webkit-tap-highlight-color;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+p,
+span {
+  span,
+  div,
+  em,
+  sub,
+  sup {
+    display: inline-block;
+  }
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+img {
+  border-style: none;
+}
+
+head,
+style,
+[hidden] {
+  display: none;
+}

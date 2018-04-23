@@ -1,0 +1,23 @@
+@mixin tile {
+  background: linear-gradient(310deg, rgb(26,18,24), rgb(42,32,38));
+  //background: blue;
+  color: white;
+  margin: 20px 25px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 3px;
+  box-shadow: 0 0 20px -5px rgba(0,0,0,0.334);
+}
+
+@mixin sub-text {
+  font-size: 0.6667em;
+  font-weight: 600;
+  letter-spacing: 0.2667em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  opacity: 0.75;
+}

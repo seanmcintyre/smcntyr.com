@@ -1,32 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HireComponent } from './hire/hire.component';
-import { StatsComponent } from './stats/stats.component';
+import { AboutComponent } from './about/about.component';
+import { ResumeComponent } from './resume/resume.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { LighthouseComponent } from './portfolio/lighthouse/lighthouse.component';
 
-const HireData = {};
-const StatsData = {};
 
 const routes: Routes = [
   {
     path: '',
-    children: []
+    component: PortfolioComponent
   },
   {
-    path: 'test',
-    redirectTo: '/',
-    pathMatch: 'full'
+    path: 'about',
+    component: AboutComponent
   },
   {
-    path: 'hire',
-    component: HireComponent,
-    data: HireData
+    path: 'resume',
+    component: ResumeComponent
   },
   {
-    path: 'stats',
-    component: StatsComponent,
-    data: StatsData
-  }
+    path: 'lighthouse',
+    component: LighthouseComponent
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,69 @@
+input,
+label,
+select,
+button,
+textarea {
+  background: none;
+  font-family: $fontstack;
+  font-size: 1rem;
+  line-height: 1;
+  white-space: normal;
+  vertical-align: middle;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-search-decoration {
+  display: none;
+}
+
+button,
+input {
+  overflow: visible;
+  width: auto;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+template {
+  display: none;
+}

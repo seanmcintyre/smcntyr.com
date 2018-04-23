@@ -1,0 +1,42 @@
+@import "~global/tile.scss";
+@import "~global/typography.scss";
+
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  align-items: flex-start;
+  background: white;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.experience {
+  width: 100%;
+  padding: 50px 50px 0 50px;
+}
+
+.education,
+.expertise {
+  width: 50%;
+  margin: 0;
+  padding: 30px 50px 50px;
+}
+
+div {
+ span {
+   display: block;
+ }
+}
+
+.entry {
+  margin-bottom: 20px;
+}
