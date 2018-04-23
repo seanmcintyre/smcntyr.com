@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { timer } from 'rxjs';
 
+import { gradients } from './sky';
+
 @Component({
   selector: 'clock',
   templateUrl: './clock.component.html',
@@ -36,21 +38,25 @@ export class ClockComponent implements OnInit {
 
   setTime() {
     [this.hour, this.minute, this.second] = getTime(this.timeOffset);
+    console.log(this.hour);
+    document.body.style.background = gradient(this.hour);
   }
 
 }
+
+const gradient = (hour) => `linear-gradient(${gradients[leadingZero(hour)]})`;
 
 const getTime = (offset = 0) => {
   const now = new Date();
   return [
     offset + now.getHours(),
-    ldZ(now.getMinutes()),
-    ldZ(now.getSeconds())
+    leadingZero(now.getMinutes()),
+    leadingZero(now.getSeconds())
   ]
 }
 
 
-const ldZ = (i) => {
+const leadingZero = (i) => {
   if (i < 10) {i = '0' + i};
   return i;
 }
