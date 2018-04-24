@@ -30,14 +30,19 @@ h1 {
   float: left;
 
   &.collapse {
-    max-width: 200px;
-    transition: 100ms;
+    max-width: 60px;
+    transition: 300ms;
     margin-right: 50px;
 
     > div {
       padding: 20px 0;
       border-bottom: 1px dashed rgba(white, 0);
     }
+
+    > div > *:first-child {
+      margin-right: 0;
+    }
+
     > div > *:nth-child(n+2) {
       opacity: 0;
     }
@@ -50,7 +55,7 @@ h1 {
     color: white;
     border-bottom: 1px dashed rgba(white, 0.3);
     display: flex;
-    transition: 150ms;
+    transition: 450ms;
 
     > *:first-child {
       display: inline-block;
