@@ -1,74 +1,102 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<nav>
-  <a routerLink="/">Work</a>
-  <a routerLink="/about">About</a>
-  <a routerLink="/resume">Resume</a>
-</nav>
-
 <clock></clock>
 
-<h1>Sean McIntyre</h1>
-<span class="discipline">Product Designer, Engineer</span>
+<main>
+  <h1>Sean McIntyre</h1>
+  <span class="discipline">Product Designer, Engineer</span>
 
-<h3>{{router.url}}</h3>
+  <about></about>
 
-<div class="resume"
-  [ngClass]="routeCollapse()"
-  @resumeAni>
-  <div class="lighthouse"
-    routerLink="/lighthouse">
-    <logo-lighthouse></logo-lighthouse>
-    <span class="name">Lighthouse</span>
-    <span class="role">Product, Brand Design</span>
-    <span class="role">Front End</span>
-    <span class="work-type">Contract</span>
+  <div class="stats">
+    <a class="resume"
+      href="assets/resume.pdf"
+      target="_blank">
+      <div class="icon"></div>
+      <em>download resume</em>
+    </a>
+
+    <a class="portfolio"
+      href="mailto:hello@smcntyr.com"
+      target="_blank">
+      <div class="icon"></div>
+      <em>please reach out for my portfolio</em>
+    </a>
+
+    <span class="current">
+      <em>current tech interests</em><br>
+      <span>TypeScript</span>
+      <span>GraphQL</span>
+      <span>Angular 6</span>
+      <span>React</span>
+      <span>Web Animation</span>
+      <span>SVG</span>
+      <span>CSS Grid</span>
+      <span>PostCSS</span>
+      <span>RxJS</span>
+      <span>Progressive Web Apps</span>
+    </span>
   </div>
 
-  <div class="gust">
-    <logo-gust></logo-gust>
-    <span class="name">Gust</span>
-    <span class="role">Product Design</span>
-    <span class="role">Front End</span>
-  </div>
+  <div class="work"
+    [ngClass]="routeCollapse()"
+    @resumeAni>
 
-  <div class="sharewave">
-    <!-- <logo-sharewave></logo-sharewave> -->
-    <div class="logo"></div>
-    <span class="name">Sharewave</span>
-    <span class="role">Product Design</span>
-    <span class="role">Front End</span>
-  </div>
+    <h3>current & previous work</h3>
 
-  <div class="northstreet">
-    <!-- <logo-northstreet></logo-northstreet> -->
-    <div class="logo"></div>
-    <span class="name">North Street</span>
-    <span class="role">Responsive Design</span>
-    <span class="role">Front End</span>
-    <span class="work-type">Contract</span>
-  </div>
+    <div class="lighthouse"
+      routerLink="/lighthouse">
+      <logo-lighthouse></logo-lighthouse>
+      <span class="name">Lighthouse</span>
+      <span class="role">Product, Brand Design</span>
+      <span class="role">Front End</span>
+    </div>
 
-  <div class="nox">
-    <logo-nox></logo-nox>
-    <span class="name">Nox</span>
-    <span class="role">Founder</span>
-  </div>
+    <div class="gust">
+      <logo-gust></logo-gust>
+      <span class="name">Gust</span>
+      <span class="role">Product Design</span>
+      <span class="role">Front End</span>
+    </div>
 
-  <div class="holly">
-    <logo-holly></logo-holly>
-    <span class="name">holly.yoga</span>
-    <span class="role">Design</span>
-    <span class="role">Development</span>
-  </div>
+    <div class="sharewave">
+      <!-- <logo-sharewave></logo-sharewave> -->
+      <div class="logo"></div>
+      <span class="name">Sharewave</span>
+      <span class="role">Product Design</span>
+      <span class="role">Front End</span>
+    </div>
 
-  <div class="tedxslc">
-    <logo-tedxslc></logo-tedxslc>
-    <span class="name">TEDxSLC</span>
-    <span class="role">Co-Founder</span>
-    <span class="role">Design, Production, Editing</span>
-    <a href="https://www.youtube.com/results?search_query=TEDxSLC"
-    target="_blank">link</a>
-  </div>
-</div>
+    <div class="northstreet">
+      <!-- <logo-northstreet></logo-northstreet> -->
+      <div class="logo"></div>
+      <span class="name">North Street</span>
+      <span class="role">Responsive Design</span>
+      <span class="role">Front End</span>
+    </div>
 
-<router-outlet></router-outlet>
+    <div class="nox">
+      <logo-nox></logo-nox>
+      <span class="name">Nox</span>
+      <span class="role">Founder</span>
+    </div>
+
+    <div class="holly">
+      <logo-holly></logo-holly>
+      <span class="name">holly.yoga</span>
+      <span class="role">Design</span>
+      <span class="role">Development</span>
+    </div>
+
+    <div class="tedxslc">
+      <logo-tedxslc></logo-tedxslc>
+      <span class="name">TEDxSLC</span>
+      <span class="role">Co-Founder</span>
+      <span class="role">Design, Production, Editing</span>
+      <a href="https://www.youtube.com/results?search_query=TEDxSLC"
+      target="_blank">link</a>
+    </div>
+  </div>
+</main>
+
+<img class="skyline"
+  src="assets/nyc-12.png"
+  alt="">
