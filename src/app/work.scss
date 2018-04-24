@@ -1,0 +1,62 @@
+.work {
+  float: left;
+  padding-top: 50px;
+
+  h3 {
+    padding: 15px 50px;
+    display: block;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'roboto mono', monospace;
+    padding-bottom: 50px;
+  }
+
+  &.collapse {
+    max-width: 60px;
+    transition: 300ms;
+    margin-right: 50px;
+
+    > div {
+      padding: 20px 0;
+      border-bottom: 1px dashed rgba(white, 0);
+    }
+
+    > div > *:first-child {
+      margin-right: 0;
+    }
+
+    > div > *:nth-child(n+2) {
+      opacity: 0;
+    }
+  }
+
+
+  > div {
+    padding: 20px 50px;
+    display: block;
+    color: white;
+    border-bottom: 1px dashed rgba(white, 0.3);
+    display: flex;
+    transition: 450ms;
+
+    > *:first-child {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+      display: flex;
+      margin-right: 32px;
+      justify-content: center;
+      border: 1px solid rgba(white, 0.5);
+      border-radius: 3px;
+    }
+
+    .role {
+      @include tag;
+    }
+  }
+
+  .northstreet {
+    margin-bottom: 80px;
+  }
+}

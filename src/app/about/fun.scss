@@ -1,0 +1,31 @@
+.fun {
+  margin-top: 50px;
+  font-family: 'roboto mono', monospace;
+  font-size: 0.75rem;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+
+li {
+  display: block;
+  margin: 15px 0;
+  vertical-align: top;
+  line-height: 1em;
+}
+
+span {
+  line-height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.emoji {
+  font-size: 1.75em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  transform: translateY(0.0334em);
+}
