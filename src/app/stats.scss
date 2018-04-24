@@ -1,0 +1,47 @@
+.stats {
+  border-top: 1px solid rgba(white, 0.334);
+  border-bottom:  1px solid rgba(white, 0.334);
+  padding: 50px 0;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(white, 0.3);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+
+  .resume,
+  .current,
+  .portfolio {
+    display: block;
+    padding: 20px 50px;
+
+    em {
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    span {
+      @include tag;
+    }
+  }
+
+  .resume,
+  .portfolio {
+      border: 1px solid rgba(white, 0.5);
+      min-width: 150px;
+      max-width: 150px;
+      min-height: 150px;
+      max-height: 150px;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 0 0 0 50px;
+      float: left;
+      padding: 20px;
+  }
+
+}
