@@ -27,12 +27,30 @@ h1 {
 }
 
 .resume {
+  float: left;
+
+  &.collapse {
+    max-width: 200px;
+    transition: 100ms;
+    margin-right: 50px;
+
+    > div {
+      padding: 20px 0;
+      border-bottom: 1px dashed rgba(white, 0);
+    }
+    > div > *:nth-child(n+2) {
+      opacity: 0;
+    }
+  }
+
+
   > div {
     padding: 20px 50px;
     display: block;
     color: white;
     border-bottom: 1px dashed rgba(white, 0.3);
     display: flex;
+    transition: 150ms;
 
     > *:first-child {
       display: inline-block;
@@ -51,6 +69,8 @@ h1 {
       line-height: 60px;
       font-weight: 600;
       letter-spacing: 0.2px;
+      transition: 200ms;
+      max-width: 1000px;
     }
   }
 

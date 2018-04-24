@@ -10,8 +10,13 @@
 <h1>Sean McIntyre</h1>
 <span class="discipline">Product Designer, Engineer</span>
 
-<div class="resume" @resumeAni>
-  <div class="lighthouse">
+<h3>{{router.url}}</h3>
+
+<div class="resume"
+  [ngClass]="routeCollapse()"
+  @resumeAni>
+  <div class="lighthouse"
+    routerLink="/lighthouse">
     <logo-lighthouse></logo-lighthouse>
     <span class="role">Product, Brand Design</span>
     <span class="role">Front End</span>
@@ -57,3 +62,5 @@
     target="_blank">link</a>
   </div>
 </div>
+
+<router-outlet></router-outlet>

@@ -8,15 +8,16 @@
 }
 :host {
   padding: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 800px;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  float: left;
+  // left: 50%;
+  width: 600px;
+  //transform: translate(-50%, -50%);
   border: 1px solid rgba(white, 0.5);
   border-radius: 3px;
   background: rgba(black, 0.85);
-  animation: fadeIn 200ms;
+  animation: fadeIn 300ms 200ms both;
     text-align: left;
       line-height: 1.5em;
 }

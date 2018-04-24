@@ -23,4 +23,8 @@ export class AppComponent implements OnInit {
     this.animate = true;
   }
 
+  routeCollapse() {
+    return this.router.url === '/' ? false : 'collapse';
+  }
+
 }

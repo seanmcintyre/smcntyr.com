@@ -8,9 +8,13 @@ import { LighthouseComponent } from './portfolio/lighthouse/lighthouse.component
 
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   component: PortfolioComponent
+  // },
   {
-    path: '',
-    component: PortfolioComponent
+    path: 'lighthouse',
+    component: LighthouseComponent
   },
   {
     path: 'about',
