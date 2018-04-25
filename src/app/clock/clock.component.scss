@@ -52,7 +52,7 @@ $size: 150px;
   display: block;
   top: 0;
   position: absolute;
-  line-height: $size;
+  line-height: $size + 6px;
   width: $size;
   text-align: center;
   font-size: 28px;
