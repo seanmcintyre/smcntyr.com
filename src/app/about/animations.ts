@@ -8,7 +8,7 @@ export const slideFade = trigger('slideFade', [
           transform: 'translateX(-30px)'
         }),
         stagger(55, [
-          animate('340ms 400ms', keyframes([
+          animate('300ms 800ms ease-in-out', keyframes([
             style({opacity: 0, transform: 'translateX(-21px)', offset: 0}),
             style({opacity: 1, transform: 'translateX(8px)',  offset: 0.3}),
             style({opacity: 1, transform: 'translateX(0)',     offset: 1.0})

@@ -2,6 +2,24 @@
 
 $highlight: rgb(255, 0, 230);
 
+@keyframes fadeInA {
+  0% {
+    opacity: 0;
+    transform: scale(0.99) translateY(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1           { animation: fadeInA 270ms 50ms both ease-in-out }
+.discipline  { animation: fadeInA 270ms 200ms both ease-in-out }
+about        { animation: fadeInA 270ms 300ms both ease-in-out }
+.resume      { animation: fadeInA 270ms 350ms both ease-in-out }
+.portfolio   { animation: fadeInA 270ms 400ms both ease-in-out }
+.current     { animation: fadeInA 270ms 450ms both ease-in-out }
+
 main {
   display: block;
   color: white;
