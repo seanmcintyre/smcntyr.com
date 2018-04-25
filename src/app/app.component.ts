@@ -14,14 +14,14 @@ export class AppComponent implements OnInit {
 
   constructor(clock: ClockService) {
     this.clock = clock;
-    console.log(this.clock);
   }
 
   ngOnInit() {
   }
 
   skyline() {
-    return `assets/nyc-${this.clock.hour}.png`;
+    const img = this.clock.hour ? `nyc-${this.clock.hour}` : `nyc`;
+    return `assets/${img}.png`;
   }
 
 }
