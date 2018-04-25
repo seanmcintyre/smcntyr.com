@@ -1,9 +1,9 @@
 <svg class="clock"
-  [style.stroke-dasharray]="getDash()">
+  [style.stroke-dasharray]="clock.getDash()">
     <circle id="circle" r="37.5" cx="75" cy="75"></circle>
 </svg>
 
 <span class="hour"
-  (click)="nextHour()">
-  {{hour}}
+  (click)="clock.nextHour()">
+  {{clock.hour}}
 </span>
