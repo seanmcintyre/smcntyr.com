@@ -3,13 +3,20 @@ $size: 150px;
 :host {
   display: block;
   position: fixed;
-  top: 20px;
-  right: 30px;
+  top: -20px;
+  right: -20px;
   height: $size;
   width: $size;
   z-index: 999999;
   text-align: center;
   color: #FFF;
+  transform: scale(0.75);
+
+  @media screen and (min-width: 720px) {
+    top: 20px;
+    right: 30px;
+    transform: scale(1);
+  }
 }
 
 @keyframes clock {
@@ -48,7 +55,7 @@ $size: 150px;
   line-height: $size;
   width: $size;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 300;
   cursor: pointer;
   user-select: none;

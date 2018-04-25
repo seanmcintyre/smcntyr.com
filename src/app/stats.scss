@@ -3,8 +3,11 @@
   border-bottom:  1px solid rgba(white, 0.334);
   padding: 50px 0;
   overflow: hidden;
-  display: flex;
-  text-align: center;
+
+  @media screen and (min-width: 720px) {
+    display: flex;
+    text-align: center;
+  }
 
   .icon {
     margin: 0 auto 0;
@@ -18,6 +21,7 @@
   .portfolio {
     display: block;
     padding: 20px 50px;
+    margin: 0 auto;
 
     em {
       font-style: italic;
@@ -26,6 +30,11 @@
 
     span {
       @include tag;
+      margin: 10px 15px 0 0;
+
+      @media screen and (min-width: 720px) {
+      margin: 10px 0 0 15px;
+      }
     }
   }
 
@@ -37,18 +46,29 @@
       min-height: 150px;
       max-height: 150px;
       border-radius: 4px;
-      display: inline-block;
-      margin: 0 0 0 50px;
-      float: left;
+      margin: 0 50px 50px;
       padding: 30px 20px;
       transition: 100ms;
       background: rgba(white, 0);
+      text-align: center;
+
+      @media screen and (min-width: 720px) {
+        display: inline-block;
+        margin: 0 0 0 50px;
+      }
 
       &:hover {
         transform: scale(1.02) translateY(-1px);
         border: 1px solid rgba(white, 0.8);
         background: rgba(white, 0.05);
       }
+  }
+
+  .portfolio {
+    display: none;
+    @media screen and (min-width: 720px) {
+      display: inline-block;
+    }
   }
 
 }

@@ -13,19 +13,33 @@ li {
   display: block;
   margin: 15px 0;
   vertical-align: top;
-  line-height: 1em;
+  line-height: 1.3em;
+  padding-left: 50px;
+  position: relative;
+
+  @media screen and (min-width: 720px) {
+    min-height: 2.5em;
+    line-height: 2.5em;
+  }
 }
 
 span {
-  line-height: 1em;
-  display: inline-block;
+  //line-height: 1.3em;
+  display: block;
   vertical-align: middle;
 }
 
 .emoji {
   font-size: 1.75em;
-  display: inline-block;
+  display: inline;
   vertical-align: middle;
   margin-right: 15px;
-  transform: translateY(0.0334em);
+  transform: translateY(-49%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  @media screen and (min-width: 720px) {
+    font-size: 2.5em;
+  }
 }
