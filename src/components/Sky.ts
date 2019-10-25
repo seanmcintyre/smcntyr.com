@@ -3,7 +3,7 @@
 //TODO: lat/long colors
 //TODO: weather colors
 
-export const gradients = {
+export const gradients: any = {
   '00': '#000000, #000000',
   '01': '#000000, #000000',
   '02': '#000000, #000000',
@@ -28,5 +28,5 @@ export const gradients = {
   '21': '#32314D, #142643',
   '22': '#2B2237, #0E0E16',
   '23': '#211E2B, #000000',
-  '24': '#000000, #000000'
+  '24': '#000000, #000000',
 };

@@ -1,0 +1,15 @@
+{
+  "arrowParens": "always",
+  "parser": "typescript",
+  "printWidth": 64,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": [ "index.ts" ],
+      "options": {
+        "printWidth": 256
+      }
+    }
+  ]
+}
